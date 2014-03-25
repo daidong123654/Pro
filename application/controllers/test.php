@@ -4,7 +4,7 @@
 */
 class test extends CI_Controller{
 	
-	function __construct(argument)
+	function __construct()
 	{
 		# code...
 	}
