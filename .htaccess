@@ -1,11 +1,27 @@
-<IfModule mod_rewrite.c>
- 
+<IfModule mod_rewrite.c> 
+#开启转写
 RewriteEngine on
- 
-RewriteCond %{REQUEST_FILENAME} !-d
- 
-RewriteCond %{REQUEST_FILENAME} !-f
- 
-RewriteRule ^(.*)$ /work/Pro/index.php/$1 [QSA,PT,L]
- 
+
+#资源文件直接访问,资源文件继续进行转写
+RewriteCond %{REQUEST_URI} !^.*(.css|.js|.gif|.png|.jpg|.jpeg)$
+
+###########################################################
+#如果有文件则直接访问
+RewriteCond %{REQUEST_FILENAME} !-d [NC]
+#没有则进行转写
+RewriteCond %{REQUEST_FILENAME} !-f [NC]
+#localhost访问
+RewriteCond %{HTTP_HOST} !^pro.com [NC]
+RewriteRule ^(.*)$ index.php/$1 [QSA,PT,NC]
+
+##########################################################
+#如果有文件则直接访问
+RewriteCond %{REQUEST_FILENAME} !-d [NC]
+#没有则进行转写
+RewriteCond %{REQUEST_FILENAME} !-f [NC]
+#pro.com访问
+RewriteCond %{HTTP_HOST} ^pro.com$ [NC]
+RewriteCond %{HTTP_HOST} !^pro.com/index.php$ [NC]
+RewriteRule ^(.*)$ index.php/$1 [QSA,NC,PT,L] 
+
 </IfModule>
