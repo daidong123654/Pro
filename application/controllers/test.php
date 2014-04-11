@@ -11,11 +11,18 @@ class test extends CI_Controller{
 	}
 
 	function index(){
-		$this->load->view('login');
+		$this->load->view('index');
+		$this->load->view('footer');	
 	}
 
-	function a(){
-		$this->load->view('login_test');
+	function login(){
+		$this->load->view('header');
+		$this->load->view('login');
+		$this->load->view('footer');
+	}
+
+	function b(){
+		
 	}
 }
 ?>
