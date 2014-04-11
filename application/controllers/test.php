@@ -11,9 +11,11 @@ class test extends CI_Controller{
 	}
 
 	function index(){
-		echo "This is a test<br/>";
-		echo base_url();
-		echo site_url();
+		$this->load->view('login');
+	}
+
+	function a(){
+		$this->load->view('login_test');
 	}
 }
 ?>
