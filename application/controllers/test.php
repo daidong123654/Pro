@@ -22,7 +22,8 @@ class test extends CI_Controller{
 	}
 
 	function b(){
-		
+		$this->load->view('student/index');
+		$this->load->view('footer');
 	}
 }
 ?>

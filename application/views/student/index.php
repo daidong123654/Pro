@@ -1,3 +1,9 @@
+<link rel="shortcut icon" href="<?php echo base_url('rs/flatui/images/favicon.ico');?>">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('rs/css/nbootstrap.css');?>">
+<script type="text/javascript" src="<?php echo base_url('rs/js/jquery.js');?>"></script>
+<script type="text/javascript" src="<?php echo base_url('rs/js/nbootstrap.js');?>"></script>
+
+
 <div class="container-fluid">
 	<div class="row-fluid">
 		<div class="span12">
@@ -113,7 +119,7 @@
 								</ol>
 								<div class="carousel-inner">
 									<div class="item active">
-										<img alt="" src="img/1.jpg" />
+										<img alt="" src="<?php echo base_url('rs/img/course/1.jpg')?>" />
 										<div class="carousel-caption">
 											<h4>
 												棒球
@@ -124,7 +130,7 @@
 										</div>
 									</div>
 									<div class="item">
-										<img alt="" src="img/2.jpg" />
+										<img alt="" src="<?php echo base_url('rs/img/course/2.jpg')?>" />
 										<div class="carousel-caption">
 											<h4>
 												冲浪
@@ -135,7 +141,7 @@
 										</div>
 									</div>
 									<div class="item">
-										<img alt="" src="img/3.jpg" />
+										<img alt="" src="<?php echo base_url('rs/img/course/3.jpg')?>" />
 										<div class="carousel-caption">
 											<h4>
 												自行车
@@ -150,7 +156,7 @@
 							<ul class="thumbnails">
 								<li class="span4">
 									<div class="thumbnail">
-										<img alt="300x200" src="img/people.jpg" />
+										<img alt="300x200" src="<?php echo base_url('rs/img/course/people.jpg')?>" />
 										<div class="caption">
 											<h3>
 												冯诺尔曼结构
@@ -166,7 +172,7 @@
 								</li>
 								<li class="span4">
 									<div class="thumbnail">
-										<img alt="300x200" src="img/city.jpg" />
+										<img alt="300x200" src="<?php echo base_url('rs/img/course/city.jpg')?>" />
 										<div class="caption">
 											<h3>
 												哈佛结构
@@ -182,7 +188,7 @@
 								</li>
 								<li class="span4">
 									<div class="thumbnail">
-										<img alt="300x200" src="img/sports.jpg" />
+										<img alt="300x200" src="<?php echo base_url('rs/img/course/sports.jpg')?> />
 										<div class="caption">
 											<h3>
 												改进型哈佛结构
